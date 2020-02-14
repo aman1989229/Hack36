@@ -38,7 +38,28 @@
                                 @enderror
                             </div>
                         </div>
+                <!--  checkboxes--> 
+                        <div class="form-check" style="margin-left:30%">
+                        <input class="form-check-input" type="radio" name="type" id="exampleRadios1" value="1" checked>
+                        <label class="form-check-label" for="type">
+                            Farmer
+                        </label>
+                        </div>
+                        
+                        <div class="form-check" style="margin-left:30%">
+                        <input class="form-check-input" type="radio" name="type" id="exampleRadios1" value="2" checked>
+                        <label class="form-check-label" for="type">
+                            Customer
+                        </label>
+                        </div>
 
+                         <div class="form-check" style="margin-left:30%">
+                        <input class="form-check-input" type="radio" name="type" id="exampleRadios1" value="3" checked>
+                        <label class="form-check-label" for="type">
+                            Employee
+                        </label>
+                        </div>
+                 <!--  checkboxes--> 
                         <div class="form-group row">
                             <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
 

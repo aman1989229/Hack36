@@ -23,3 +23,14 @@ Route::group(['prefix' => 'admin'], function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/profile', 'FarmerController@create')->name('profile');
+
+//Route for farmers
+Route::resource('farmers','FarmerController');
+
+//route for poc
+Route::resource('poc','PocController');
+
+//route for pocgroups
+Route::resource('pocgroups','PocgroupController');

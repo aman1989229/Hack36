@@ -1,23 +1,18 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Dashboard</div>
 
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
+  <div id="particles-js">
+    
+  </div>
 
-                    You are logged in!
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+  <script>
+    particlesJS.load('particles-js', '{{ asset('particles.json') }}', function(){
+      console.log('particles.json loaded...');
+    });
+  </script>
+
+
 @endsection
