@@ -65,7 +65,11 @@
                                  <a class="dropdown-item" href="{{route('farmers.edit',$user->id)}}">Edit Profile</a>
                                     
                                      @endif
-                                
+                                    
+                                     <a class="dropdown-item" href="{{route('stocks.index')}}">Stock</a>
+                                      
+                                      <a class="dropdown-item" href="{{route('stocks.show',$user->id)}}">History</a>
+
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">

@@ -34,3 +34,6 @@ Route::resource('poc','PocController');
 
 //route for pocgroups
 Route::resource('pocgroups','PocgroupController');
+
+//route for stock
+Route::resource('stocks','StockController');
