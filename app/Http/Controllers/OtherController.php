@@ -13,6 +13,8 @@ use App\Employee;
 use App\Stock;
 use App\Vegetable;
 use App\Pocgroup;
+use App\Retailer;
+use App\Order;
 
 class OtherController extends Controller
 {
@@ -21,6 +23,15 @@ class OtherController extends Controller
     {
         //
         return view('Employee.Addvege');
+    }
+
+    public function requestorder()
+    {
+        //
+        $id=Auth::id();
+          $poc=Poc::where('user_id','=',$id)->first();
+        $request=Order::where(['poc_id'=>$poc->id,'status'=>'3'])->get(); 
+        return view('Employee.requestorder')->withRequest($request);
     }
 
     public function addvege(Request $request)

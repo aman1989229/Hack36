@@ -53,3 +53,4 @@ Route::get ('vegeindex','OtherController@vegeindex')->name('vegeindex');
 Route::get ('placeorder','OtherController@placeorder')->name('placeorder');
 Route::get('searchstate',['as'=>'search.state','uses'=>'OtherController@searchstate']);
 Route::get('statequantity',['as'=>'search.state','uses'=>'OtherController@statequantity']);
+Route::get ('requestorder','OtherController@requestorder')->name('requestorder');
