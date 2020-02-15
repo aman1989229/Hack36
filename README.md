@@ -1,4 +1,4 @@
-<p align="center" style="font-weight:bold; font-size:42px;">
+<p align="center" style="font-size:42px;">
      AGRO-GARDEN
 </p>
 
@@ -9,6 +9,7 @@ Problem Statement : Creating a supply-chain for helping the farmers and connecti
 Technology used: 
 
 1.Laravel
+
 Laravel is a web application framework with expressive, elegant syntax. Laravel takes the pain out of development by easing common tasks used in many web projects.
 
 2.MySQL Database
