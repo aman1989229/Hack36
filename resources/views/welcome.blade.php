@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>AgroGarDen</title>
-
+        <link rel="icon" href="img/core-img/logo.png">
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
          <link rel="stylesheet" href="style.css">
@@ -78,16 +78,16 @@
       
             <div class="top-header-content">
               <!-- Top Header Content -->
-              <div class="top-header-meta" style="text-align: left; padding-top: 15px;padding-left: 20px; color:green;">
+              <div class="top-header-meta" style="text-align:left; padding-top: 15px;padding-left: 20px; color:green;">
                 Welcome to <span>AgroGarden</span>, we hope you will enjoy our products and have good experience
               <span style="margin-left: 310px;"></span>
                 <a href="#" data-toggle="tooltip" data-placement="bottom" title="agrogarden@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> <span>Email: agrogarden@gmail.com</span></a>
-                <a href="#" data-toggle="tooltip" data-placement="bottom" title="+91 9898787886"><i class="fa fa-phone" aria-hidden="true"></i> <span>Call Us: +84 223 9000</span></a>
+                <a href="#" data-toggle="tooltip" data-placement="bottom" title="+91 9898787886"><i class="fa fa-phone" aria-hidden="true"></i> <span>Call Us: +91 923 300 9000</span></a>
               </div>
             </div>
           
     </div>
-        <div class="flex-center position-ref full-height" style="background-color: orange;">
+        <div class="flex-center position-ref full-height" style="background-image:url('./images/bg2.jpg');">
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
@@ -103,6 +103,7 @@
             @endif
 
             <div class="content">
+                <img src="img/core-img/logo.png">
                 <div class="title m-b-md">
                     AgroGarDen
                 </div>
@@ -116,6 +117,7 @@
         <div class="container" >
         </div>
       </div>
+
     </div>  </header>
 
     <div class="hero-area" style="margin-top:9px">
@@ -129,7 +131,7 @@
               <div class="welcome-content">
                 <h2 data-animation="fadeInUp" data-delay="200ms">Adding Green to your Life</h2>
                 <p data-animation="fadeInUp" data-delay="400ms"></p>
-                <a href="#" class="btn famie-btn mt-4" data-animation="bounceInUp" data-delay="600ms">Contact Us</a>
+                
               </div>
             </div>
           </div>
@@ -146,7 +148,7 @@
                 <p data-animation="fadeInDown" data-delay="400ms">Mauris vestibulum dolor nec lacinia facilisis. Fusce interdum sagittis volutpat. Praesent eget varius ligula, malesuada eleifend purus. Aenean euismod est at mauris mollis ultricies.
                   Morbi arcu mi, dictum eu luala, dapibus
                   interdum mollis.</p>
-                <a href="#" class="btn famie-btn mt-4" data-animation="bounceInDown" data-delay="600ms">Contact Us</a>
+                
               </div>
             </div>
           </div>
@@ -268,293 +270,7 @@
   </section>
   <!-- ##### Services Area End ##### -->
 
-  <!-- ##### Our Products Area Start ##### -->
-  <section class="our-products-area section-padding-100">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <!-- Section Heading -->
-          <div class="section-heading text-center">
-            <p>Featured Products</p>
-            <h2><span>Our Product</span> Are Highest Quality</h2>
-            <img src="img/core-img/decor2.png" alt="">
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-
-        <!-- Single Product Area -->
-        <div class="col-12 col-sm-6 col-lg-3">
-          <div class="single-product-area mb-50 wow fadeInUp" data-wow-delay="100ms">
-            <!-- Product Thumbnail -->
-            <div class="product-thumbnail">
-              <img src="img/bg-img/p1.jpg" alt="">
-              <!-- Product Tags -->
-              <span class="product-tags">Hot</span>
-              <!-- Product Meta Data -->
-              <div class="product-meta-data">
-                <a href="#" data-toggle="tooltip" data-placement="top" title="Favourite"><i class="icon_heart_alt"></i></a>
-                <a href="#" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="icon_cart_alt"></i></a>
-                <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><i class="arrow_left-right_alt"></i></a>
-              </div>
-            </div>
-            <!-- Product Description -->
-            <div class="product-desc text-center pt-4">
-              <a href="#" class="product-title">Strawberry</a>
-              <h6 class="price">$17.99</h6>
-            </div>
-          </div>
-        </div>
-
-        <!-- Single Product Area -->
-        <div class="col-12 col-sm-6 col-lg-3">
-          <div class="single-product-area mb-50 wow fadeInUp" data-wow-delay="300ms">
-            <!-- Product Thumbnail -->
-            <div class="product-thumbnail">
-              <img src="img/bg-img/p2.jpg" alt="">
-              <!-- Product Meta Data -->
-              <div class="product-meta-data">
-                <a href="#" data-toggle="tooltip" data-placement="top" title="Favourite"><i class="icon_heart_alt"></i></a>
-                <a href="#" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="icon_cart_alt"></i></a>
-                <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><i class="arrow_left-right_alt"></i></a>
-              </div>
-            </div>
-            <!-- Product Description -->
-            <div class="product-desc text-center pt-4">
-              <a href="#" class="product-title">Baked Breads</a>
-              <h6 class="price">$9.99</h6>
-            </div>
-          </div>
-        </div>
-
-        <!-- Single Product Area -->
-        <div class="col-12 col-sm-6 col-lg-3">
-          <div class="single-product-area mb-50 wow fadeInUp" data-wow-delay="500ms">
-            <!-- Product Thumbnail -->
-            <div class="product-thumbnail">
-              <img src="img/bg-img/p3.jpg" alt="">
-              <!-- Product Meta Data -->
-              <div class="product-meta-data">
-                <a href="#" data-toggle="tooltip" data-placement="top" title="Favourite"><i class="icon_heart_alt"></i></a>
-                <a href="#" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="icon_cart_alt"></i></a>
-                <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><i class="arrow_left-right_alt"></i></a>
-              </div>
-            </div>
-            <!-- Product Description -->
-            <div class="product-desc text-center pt-4">
-              <a href="#" class="product-title">Prime Beef</a>
-              <h6 class="price">$59.99</h6>
-            </div>
-          </div>
-        </div>
-
-        <!-- Single Product Area -->
-        <div class="col-12 col-sm-6 col-lg-3">
-          <div class="single-product-area mb-50 wow fadeInUp" data-wow-delay="700ms">
-            <!-- Product Thumbnail -->
-            <div class="product-thumbnail">
-              <img src="img/bg-img/p4.jpg" alt="">
-              <!-- Product Tags -->
-              <span class="product-tags bg-danger">Sale</span>
-              <!-- Product Meta Data -->
-              <div class="product-meta-data">
-                <a href="#" data-toggle="tooltip" data-placement="top" title="Favourite"><i class="icon_heart_alt"></i></a>
-                <a href="#" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="icon_cart_alt"></i></a>
-                <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><i class="arrow_left-right_alt"></i></a>
-              </div>
-            </div>
-            <!-- Product Description -->
-            <div class="product-desc text-center pt-4">
-              <a href="#" class="product-title">Pure Honey</a>
-              <h6 class="price"><span>$29.99</span> $19.99</h6>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="row">
-        <div class="col-12">
-          <div class="gotoshop-btn text-center wow fadeInUp" data-wow-delay="900ms">
-            <a href="shop.html" class="btn famie-btn">Go to Store</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- ##### Our Products Area End ##### -->
-
-  <!-- ##### Newsletter Area Start ##### -->
-  <section class="newsletter-area section-padding-100 bg-img bg-overlay jarallax" style="background-image: url('img/bg-img/8.jpg');">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12 col-lg-10">
-          <div class="newsletter-content">
-            <!-- Section Heading -->
-            <div class="section-heading white text-center">
-              <p>What we do</p>
-              <h2><span>Our Produce</span> Is Mainstay For Us</h2>
-              <img src="img/core-img/decor2.png" alt="">
-            </div>
-            <p class="text-white mb-50 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at diam convallis ligula cursus bibendum sed at enim. Class aptent taciti sociosqu ad litora torquent conubia nostra, per inceptos
-              himenaeos.</p>
-          </div>
-        </div>
-      </div>
-      <!-- Newsletter Form -->
-      <div class="row justify-content-center">
-        <div class="col-12 col-lg-6">
-          <form action="#" method="post">
-            <input type="text" class="form-control" placeholder="Enter your email">
-            <button type="submit" class="btn famie-btn">Subscribe</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- ##### Newsletter Area End ##### -->
-
-  <!-- ##### Farming Practice Area Start ##### -->
-  <section class="farming-practice-area section-padding-100-50">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <!-- Section Heading -->
-          <div class="section-heading text-center">
-            <p>Make the green world</p>
-            <h2><span>Farming Practices</span> To Preserve Land & Water</h2>
-            <img src="img/core-img/decor2.png" alt="">
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-
-        <!-- Single Farming Practice Area -->
-        <div class="col-12 col-sm-6 col-lg-4">
-          <div class="single-farming-practice-area mb-50 wow fadeInUp" data-wow-delay="100ms">
-            <!-- Thumbnail -->
-            <div class="farming-practice-thumbnail">
-              <img src="img/bg-img/9.jpg" alt="">
-            </div>
-            <!-- Content -->
-            <div class="farming-practice-content text-center">
-              <!-- Icon -->
-              <div class="farming-icon">
-                <img src="img/core-img/chicken.png" alt="">
-              </div>
-              <span>Farming practice for</span>
-              <h4>Chicken Farmed For Meat</h4>
-              <p>Donec nec justo eget felis facilisis ferme ntum. Aliquam portitor mauris sit amet orci. donec salim...</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Single Farming Practice Area -->
-        <div class="col-12 col-sm-6 col-lg-4">
-          <div class="single-farming-practice-area mb-50 wow fadeInUp" data-wow-delay="200ms">
-            <!-- Thumbnail -->
-            <div class="farming-practice-thumbnail">
-              <img src="img/bg-img/10.jpg" alt="">
-            </div>
-            <!-- Content -->
-            <div class="farming-practice-content text-center">
-              <!-- Icon -->
-              <div class="farming-icon">
-                <img src="img/core-img/pig.png" alt="">
-              </div>
-              <span>Farming practice for</span>
-              <h4>Pig Farm Management</h4>
-              <p>Donec nec justo eget felis facilisis ferme ntum. Aliquam portitor mauris sit amet orci. donec salim...</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Single Farming Practice Area -->
-        <div class="col-12 col-sm-6 col-lg-4">
-          <div class="single-farming-practice-area mb-50 wow fadeInUp" data-wow-delay="300ms">
-            <!-- Thumbnail -->
-            <div class="farming-practice-thumbnail">
-              <img src="img/bg-img/11.jpg" alt="">
-            </div>
-            <!-- Content -->
-            <div class="farming-practice-content text-center">
-              <!-- Icon -->
-              <div class="farming-icon">
-                <img src="img/core-img/cow.png" alt="">
-              </div>
-              <span>Farming practice for</span>
-              <h4>Beef Cattle Farming</h4>
-              <p>Donec nec justo eget felis facilisis ferme ntum. Aliquam portitor mauris sit amet orci. donec salim...</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Single Farming Practice Area -->
-        <div class="col-12 col-sm-6 col-lg-4">
-          <div class="single-farming-practice-area mb-50 wow fadeInUp" data-wow-delay="400ms">
-            <!-- Thumbnail -->
-            <div class="farming-practice-thumbnail">
-              <img src="img/bg-img/12.jpg" alt="">
-            </div>
-            <!-- Content -->
-            <div class="farming-practice-content text-center">
-              <!-- Icon -->
-              <div class="farming-icon">
-                <img src="img/core-img/cereal.png" alt="">
-              </div>
-              <span>Farming practice for</span>
-              <h4>Improved Rice Cultivation</h4>
-              <p>Donec nec justo eget felis facilisis ferme ntum. Aliquam portitor mauris sit amet orci. donec salim...</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Single Farming Practice Area -->
-        <div class="col-12 col-sm-6 col-lg-4">
-          <div class="single-farming-practice-area mb-50 wow fadeInUp" data-wow-delay="500ms">
-            <!-- Thumbnail -->
-            <div class="farming-practice-thumbnail">
-              <img src="img/bg-img/13.jpg" alt="">
-            </div>
-            <!-- Content -->
-            <div class="farming-practice-content text-center">
-              <!-- Icon -->
-              <div class="farming-icon">
-                <img src="img/core-img/sprout.png" alt="">
-              </div>
-              <span>Farming practice for</span>
-              <h4>Soil Improvement Techniques</h4>
-              <p>Donec nec justo eget felis facilisis ferme ntum. Aliquam portitor mauris sit amet orci. donec salim...</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Single Farming Practice Area -->
-        <div class="col-12 col-sm-6 col-lg-4">
-          <div class="single-farming-practice-area mb-50 wow fadeInUp" data-wow-delay="600ms">
-            <!-- Thumbnail -->
-            <div class="farming-practice-thumbnail">
-              <img src="img/bg-img/14.jpg" alt="">
-            </div>
-            <!-- Content -->
-            <div class="farming-practice-content text-center">
-              <!-- Icon -->
-              <div class="farming-icon">
-                <img src="img/core-img/vegetable.png" alt="">
-              </div>
-              <span>Farming practice for</span>
-              <h4>Intensive Fruit Farming</h4>
-              <p>Donec nec justo eget felis facilisis ferme ntum. Aliquam portitor mauris sit amet orci. donec salim...</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-  <!-- ##### Farming Practice Area End ##### -->
+ 
 
   <!-- ##### Testimonial Area Start ##### -->
   <section class="testimonial-area bg-img bg-overlay section-padding-100 jarallax" style="background-image: url('img/bg-img/15.jpg');">
@@ -688,61 +404,7 @@
   </section>
   <!-- ##### Contact Area End ##### -->
 
-  <!-- ##### News Area Start ##### -->
-  <section class="news-area bg-gray section-padding-100-0">
-    <div class="container">
-      <div class="row">
-
-        <!-- Featured Post Area -->
-        <div class="col-12 col-lg-6">
-          <div class="featured-post-area mb-100 wow fadeInUp" data-wow-delay="100ms">
-            <img src="img/bg-img/17.jpg" alt="">
-            <!-- Post Content -->
-            <div class="post-content">
-              <h6>Post on <a href="#">18 Aug 2018</a> / <a href="#">Carlos Bacca</a></h6>
-              <a href="#" class="post-title">Why innovation is key to maintaining our export market share</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Single Blog Area -->
-        <div class="col-12 col-lg-6 mb-100">
-
-          <!-- Single Blog Area -->
-          <div class="single-blog-area style-2 wow fadeInUp" data-wow-delay="300ms">
-            <!-- Post Content -->
-            <div class="post-content">
-              <h6>Post on <a href="#">18 Aug 2018</a> / <a href="#">Peter Crough</a></h6>
-              <a href="#" class="post-title">Rising cattle supplies see beef export lifted</a>
-              <p>Maecenas facilisis quam orcit, velo porttitor arcu egestas eu. Maecenas donald imperdiet nibh, quis. Etiam non scelerisque exited sagittis...</p>
-            </div>
-          </div>
-
-          <!-- Single Blog Area -->
-          <div class="single-blog-area style-2 wow fadeInUp" data-wow-delay="500ms">
-            <!-- Post Content -->
-            <div class="post-content">
-              <h6>Post on <a href="#">18 Aug 2018</a> / <a href="#">Peter Crough</a></h6>
-              <a href="#" class="post-title">Cattle marts: Cows take a hit at the ringside</a>
-              <p>Maecenas facilisis quam orcit, velo porttitor arcu egestas eu. Maecenas donald imperdiet nibh, quis. Etiam non scelerisque exited sagittis...</p>
-            </div>
-          </div>
-
-          <!-- Single Blog Area -->
-          <div class="single-blog-area style-2 wow fadeInUp" data-wow-delay="700ms">
-            <!-- Post Content -->
-            <div class="post-content">
-              <h6>Post on <a href="#">18 Aug 2018</a> / <a href="#">Peter Crough</a></h6>
-              <a href="#" class="post-title">Malting barley price set to commence</a>
-              <p>Maecenas facilisis quam orcit, velo porttitor arcu egestas eu. Maecenas donald imperdiet nibh, quis. Etiam non scelerisque exited sagittis...</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- ##### News Area End ##### -->
+  
 
   <!-- ##### Footer Area Start ##### -->
   <footer class="footer-area">
