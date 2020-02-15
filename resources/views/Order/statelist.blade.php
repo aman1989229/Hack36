@@ -28,10 +28,11 @@
 		<h1 class="display-4">Choose your Option</h1>
   </header>
 		<hr>
+
     <div class="row">
-    </div>
-		<div class="control-label col-sm-12" style="background-color: #F0F3F4">
-		  @foreach($vegetable as $vegetable)
+     @foreach($vegetable as $vegetable)
+		<div class="control-label col-sm-4" style="background-color: #F0F3F4">
+		  
       <div class="card" style="width: 18rem;">
   <img class="card-img-top" src="{{ asset('img.jpg') }}" alt="Card image cap">
         
@@ -51,12 +52,14 @@
         {!! Form::close() !!}
    
   </div>
-  
+  </div>
 </div>
       @endforeach
 
 <!-- search ended here -->
+ 
 </div>
+
 @endsection
 
 
