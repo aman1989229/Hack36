@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>AgroGarDen</title>
+        <title>AgroGarden</title>
         <link rel="icon" href="img/core-img/logo.png">
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -78,9 +78,9 @@
       
             <div class="top-header-content">
               <!-- Top Header Content -->
-              <div class="top-header-meta" style="text-align:left; padding-top: 15px;padding-left: 20px; color:green;">
+              <div style="text-align:left; padding-top: 15px;padding-left: 25px; color:green; font-weight: bolder;">
                 Welcome to <span>AgroGarden</span>, we hope you will enjoy our products and have good experience
-              <span style="margin-left: 310px;"></span>
+              <span style="margin-left: 270px;"></span>
                 <a href="#" data-toggle="tooltip" data-placement="bottom" title="agrogarden@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> <span>Email: agrogarden@gmail.com</span></a>
                 <a href="#" data-toggle="tooltip" data-placement="bottom" title="+91 9898787886"><i class="fa fa-phone" aria-hidden="true"></i> <span>Call Us: +91 923 300 9000</span></a>
               </div>
@@ -91,21 +91,21 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{ url('/home') }}">Home</a>
+                        <a href="{{ url('/home') }}" style="color:black;font-size:20px;">Home</a>
                     @else
-                        <a href="{{ route('login') }}">Login</a>
+                        <a href="{{ route('login') }}" style="color:black;font-size:20px;">Login</a>
 
                         @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
+                            <a href="{{ route('register') }}" style="color:black;font-size:20px;">Register</a>
                         @endif
                     @endauth
                 </div>
             @endif
 
             <div class="content">
-                <img src="img/core-img/logo.png">
-                <div class="title m-b-md">
-                    AgroGarDen
+                <img src="img/core-img/logo.png" style="width:250px;height:250px;">
+                <div class="title m-b-md" style="color:Black; font-weight:400;">
+                    AgroGarden
                 </div>
             </div>
         </div>
@@ -145,9 +145,7 @@
             <div class="col-12 col-lg-10">
               <div class="welcome-content">
                 <h2 data-animation="fadeInDown" data-delay="200ms">Cultivating Ideas for Growth</h2>
-                <p data-animation="fadeInDown" data-delay="400ms">Mauris vestibulum dolor nec lacinia facilisis. Fusce interdum sagittis volutpat. Praesent eget varius ligula, malesuada eleifend purus. Aenean euismod est at mauris mollis ultricies.
-                  Morbi arcu mi, dictum eu luala, dapibus
-                  interdum mollis.</p>
+                <p data-animation="fadeInDown" data-delay="400ms">Always at you service...</p>
                 
               </div>
             </div>
@@ -173,18 +171,16 @@
               <h2><span>Let Us</span> Tell You Our Story</h2>
               <img src="img/core-img/decor.png" alt="">
             </div>
-            <p><b><i>AgroGarDen</i></b> is a helping hand to all the farmers in India. <b>IT'S TIME TO SUPPORT OUR FARMERS</b>
+            <p><b><i>AgroGarden</i></b> is a helping hand to all the farmers in India. <b>IT'S TIME TO SUPPORT OUR FARMERS</b>
                 <br/>The Farmer is a Solider who fight all kinds of weather conditions to keep us fed.But the Farmer of today is being neglected in our society. So, here in AgroGarDen we feel responsible to help our farmers with their work to get a deserved price and earn a regular living. We want to Create a Responsive Team for Building a Society who Cares For our Farmers. We are determined to Help Farmers in Possible ways for Making their life better and becoming their voice.</p>
           </div>
         </div>
 
         <!-- Famie Video Play -->
         <div class="col-12 col-md-4">
-          <div class="famie-video-play mb-100">
             <img src="img/bg-img/6.jpg" alt="">
             <!-- Play Icon -->
             <a href="http://www.youtube.com/watch?v=7HKoqNJtMTQ" class="play-icon"><i class="fa fa-play"></i></a>
-          </div>
         </div>
 
       </div>
@@ -217,50 +213,15 @@
           </div>
 
           <!-- Single Service Area -->
-          <div class="col-12 col-lg-6">
+           <!-- Single Service Area -->
+          <div class="col-20 col-lg-16">
             <div class="single-service-area mb-50 wow fadeInUp" data-wow-delay="100ms">
               <!-- Service Title -->
               <div class="service-title mb-3 d-flex align-items-center">
                 <img src="img/core-img/s1.png" alt="">
                 <h5>Fruit &amp; Vegetable</h5>
               </div>
-              <p>Intiam eu sagittis est, aster cosmo lacini libero. Praesent dignissim sed odio velo aliquam manta legolas. </p>
-            </div>
-          </div>
-
-          <!-- Single Service Area -->
-          <div class="col-12 col-lg-6">
-            <div class="single-service-area mb-50 wow fadeInUp" data-wow-delay="300ms">
-              <!-- Service Title -->
-              <div class="service-title mb-3 d-flex align-items-center">
-                <img src="img/core-img/s2.png" alt="">
-                <h5>Meat &amp; Eggs</h5>
-              </div>
-              <p>Intiam eu sagittis est, aster cosmo lacini libero. Praesent dignissim sed odio velo aliquam manta legolas. </p>
-            </div>
-          </div>
-
-          <!-- Single Service Area -->
-          <div class="col-12 col-lg-6">
-            <div class="single-service-area mb-50 wow fadeInUp" data-wow-delay="500ms">
-              <!-- Service Title -->
-              <div class="service-title mb-3 d-flex align-items-center">
-                <img src="img/core-img/s3.png" alt="">
-                <h5>Milk &amp; Cheese</h5>
-              </div>
-              <p>Intiam eu sagittis est, aster cosmo lacini libero. Praesent dignissim sed odio velo aliquam manta legolas. </p>
-            </div>
-          </div>
-
-          <!-- Single Service Area -->
-          <div class="col-12 col-lg-6">
-            <div class="single-service-area mb-50 wow fadeInUp" data-wow-delay="700ms">
-              <!-- Service Title -->
-              <div class="service-title mb-3 d-flex align-items-center">
-                <img src="img/core-img/s4.png" alt="">
-                <h5>Rice &amp; Corn</h5>
-              </div>
-              <p>Intiam eu sagittis est, aster cosmo lacini libero. Praesent dignissim sed odio velo aliquam manta legolas. </p>
+              <p>According to data from the Agriculture Ministry, horticulture crops first outpaced food variants six years ago. Since then, horticulture output has been mostly widening its margin with food production, with profound impact on farm incomes, water utilisation, land usage and employment patterns. Farm-related policies also need to keep up with the shift. Horticulture gives farmers a higher income, but there is little protection against a glut. </p>
             </div>
           </div>
 
@@ -269,89 +230,119 @@
     </div>
   </section>
   <!-- ##### Services Area End ##### -->
-
- 
-
-  <!-- ##### Testimonial Area Start ##### -->
-  <section class="testimonial-area bg-img bg-overlay section-padding-100 jarallax" style="background-image: url('img/bg-img/15.jpg');">
+ <!-- ##### Our Products Area Start ##### -->
+  <section class="our-products-area section-padding-100">
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <!-- Testimonial Slides -->
-          <div class="testimonial-slides owl-carousel">
-
-            <!-- Single Slide -->
-            <div class="single-slide">
-              <!-- Testimonial Text -->
-              <div class="testi-text d-flex">
-                <div class="quote-icon">
-                  <img src="img/core-img/quote.png" alt="">
-                </div>
-                <h5>"Thank you for your organic products. My children like your products and they use for breakfast. We are loving the pure milk, freshly fruit and of course our staple, Brown Rice Bread. Your Gluten Free breads truly make me feel
-                  lighter and uplifted. It's the only bread I plan to eat for the rest of my life. I will use them for many years."</h5>
-              </div>
-              <!-- Testimonial Thumbnail Name -->
-              <div class="testimonial-thumbnail-name d-flex align-items-center">
-                <div class="testimonial-thumbnail">
-                  <img src="img/bg-img/16.jpg" alt="">
-                </div>
-                <div class="testimonial-name">
-                  <h5>Mrs Lara Sullivan</h5>
-                  <h6>Customer</h6>
-                </div>
-              </div>
-            </div>
-
-            <!-- Single Slide -->
-            <div class="single-slide">
-              <!-- Testimonial Text -->
-              <div class="testi-text d-flex">
-                <div class="quote-icon">
-                  <img src="img/core-img/quote.png" alt="">
-                </div>
-                <h5>"Thank you for your organic products. My children like your products and they use for breakfast. We are loving the pure milk, freshly fruit and of course our staple, Brown Rice Bread. Your Gluten Free breads truly make me feel
-                  lighter and uplifted. It's the only bread I plan to eat for the rest of my life. I will use them for many years."</h5>
-              </div>
-              <!-- Testimonial Thumbnail Name -->
-              <div class="testimonial-thumbnail-name d-flex align-items-center">
-                <div class="testimonial-thumbnail">
-                  <img src="img/bg-img/16.jpg" alt="">
-                </div>
-                <div class="testimonial-name">
-                  <h5>Ajoy Das</h5>
-                  <h6>Client</h6>
-                </div>
-              </div>
-            </div>
-
-            <!-- Single Slide -->
-            <div class="single-slide">
-              <!-- Testimonial Text -->
-              <div class="testi-text d-flex">
-                <div class="quote-icon">
-                  <img src="img/core-img/quote.png" alt="">
-                </div>
-                <h5>"Thank you for your organic products. My children like your products and they use for breakfast. We are loving the pure milk, freshly fruit and of course our staple, Brown Rice Bread. Your Gluten Free breads truly make me feel
-                  lighter and uplifted. It's the only bread I plan to eat for the rest of my life. I will use them for many years."</h5>
-              </div>
-              <!-- Testimonial Thumbnail Name -->
-              <div class="testimonial-thumbnail-name d-flex align-items-center">
-                <div class="testimonial-thumbnail">
-                  <img src="img/bg-img/16.jpg" alt="">
-                </div>
-                <div class="testimonial-name">
-                  <h5>Akash Khan</h5>
-                  <h6>Customer</h6>
-                </div>
-              </div>
-            </div>
-
+          <!-- Section Heading -->
+          <div class="section-heading text-center">
+            <p>Featured Products</p>
+            <h2><span>Our Product</span> Are Highest Quality</h2>
+            <img src="img/core-img/decor2.png" alt="">
           </div>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <!-- Single Product Area -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="single-product-area mb-50 wow fadeInUp" data-wow-delay="100ms">
+            <!-- Product Thumbnail -->
+            <div class="product-thumbnail">
+              <img src="img/bg-img/p10.jpg" alt="">
+            </div>
+            <!-- Product Description -->
+            <div class="product-desc text-center pt-4">
+              <a href="#" class="product-title">Carrots</a>
+              
+            </div>
+          </div>
+        </div>
+
+        <!-- Single Product Area -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="single-product-area mb-50 wow fadeInUp" data-wow-delay="300ms">
+            <!-- Product Thumbnail -->
+            <div class="product-thumbnail">
+              <img src="img/bg-img/p1.jpg" alt="">
+              
+            </div>
+            <!-- Product Description -->
+            <div class="product-desc text-center pt-4">
+              <a href="#" class="product-title">Strawberries</a>
+              
+            </div>
+          </div>
+        </div>
+
+        <!-- Single Product Area -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="single-product-area mb-50 wow fadeInUp" data-wow-delay="500ms">
+            <!-- Product Thumbnail -->
+            <div class="product-thumbnail">
+              <img src="img/bg-img/p5.jpg" alt="">
+              
+            </div>
+            <!-- Product Description -->
+            <div class="product-desc text-center pt-4">
+              <a href="#" class="product-title">kiwi</a>
+             
+            </div>
+          </div>
+        </div>
+
+        <!-- Single Product Area -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="single-product-area mb-50 wow fadeInUp" data-wow-delay="700ms">
+            <!-- Product Thumbnail -->
+            <div class="product-thumbnail">
+              <img src="img/bg-img/p9.jpg" alt="">
+              
+            </div>
+          
+            <!-- Product Description -->
+          <div class="product-desc text-center pt-4">
+              <a href="#" class="product-title">Banana</a>
+              
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+     
+    </div>
+  </section>
+ 
+<section class="newsletter-area section-padding-100 bg-img bg-overlay jarallax" style="background-image: url('img/bg-img/8.jpg');">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-10">
+          <div class="newsletter-content">
+            <!-- Section Heading -->
+            <div class="section-heading white text-center">
+              <p>What we do</p>
+              <h2><span>Our Produce</span> Is Mainstay For Us</h2>
+              <img src="img/core-img/decor2.png" alt="">
+            </div>
+            <p class="text-white mb-50 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at diam convallis ligula cursus bibendum sed at enim. Class aptent taciti sociosqu ad litora torquent conubia nostra, per inceptos
+              himenaeos.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Newsletter Form -->
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-6">
+          <form action="#" method="post">
+            <input type="text" class="form-control" placeholder="Enter your email">
+            <button type="submit" class="btn famie-btn">Subscribe</button>
+          </form>
         </div>
       </div>
     </div>
   </section>
-  <!-- ##### Testimonial Area End ##### -->
 
   <!-- ##### Contact Area Start ##### -->
   <section class="contact-area section-padding-100-0">
@@ -421,69 +412,10 @@
               <div class="contact-info">
                 <p><i class="fa fa-map-pin" aria-hidden="true"></i><span>CSED Department,MNNIT Allahabad</span></p>
                 <p><i class="fa fa-envelope" aria-hidden="true"></i><span>info.agrogarden@gmail.com</span></p>
-                <p><i class="fa fa-phone" aria-hidden="true"></i><span>+84 223 9000</span></p>
+                <p><i class="fa fa-phone" aria-hidden="true"></i><span>+923 700 9000</span></p>
               </div>
             </div>
           </div>
-
-          <!-- Single Footer Widget Area -->
-          <div class="col-12 col-sm-6 col-lg-3">
-            <div class="footer-widget mb-80">
-              <h5 class="widget-title">QUICK LINK</h5>
-              <!-- Footer Widget Nav -->
-              <nav class="footer-widget-nav">
-                <ul>
-                  <li><a href="#">Purchase</a></li>
-                  <li><a href="#">Policities</a></li>
-                  <li><a href="#">Shipping</a></li><li><a href="#">FAQs</a></li>
-                  <li><a href="#">Return</a></li>
-                  <li><a href="#">Careers</a></li>
-                  <li><a href="#">Payments</a></li>
-                  <li><a href="#">Partners</a></li>
-                  <li><a href="#">Guide</a></li>
-                  <li><a href="#">Standard</a></li>
-                  <li><a href="#">News</a></li>
-                  <li><a href="#">Brands</a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-
-          <!-- Single Footer Widget Area -->
-          <div class="col-12 col-sm-6 col-lg-3">
-            <div class="footer-widget mb-80">
-              <h5 class="widget-title">RECENT NEWS</h5>
-
-              <!-- Single Recent News Start -->
-              <div class="single-recent-blog d-flex align-items-center">
-                <div class="post-thumbnail">
-                  <img src="img/bg-img/4.jpg" alt="">
-                </div>
-                <div class="post-content">
-                  <a href="#" class="post-title">India’s largest farming business on the market</a>
-                  <div class="post-date">1 feb 2020</div>
-                </div>
-              </div>
-
-              <!-- Single Recent News Start -->
-              <div class="single-recent-blog d-flex align-items-center">
-                <div class="post-thumbnail">
-                  <img src="img/bg-img/5.jpg" alt="">
-                </div>
-                <div class="post-content">
-                  <a href="#" class="post-title">Beef retail prices hit a record</a>
-                  <div class="post-date">18 Aug 2018</div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-          <!-- Single Footer Widget Area -->
-          
-
-        </div>
-      </div>
     </div>
 
     <!-- Copywrite Area  -->

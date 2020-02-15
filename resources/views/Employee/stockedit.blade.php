@@ -4,7 +4,14 @@
 @section('title','|CreatePost')
 
 @section('stylesheets')
-{!! Html::style('css/select2.min.css') !!}
+
+
+{!! Html::style('css/animate.css') !!}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+   integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css" 
+   integrity="sha256-a2tobsqlbgLsWs7ZVUGgP5IvWZsx8bTNQpzsqCSm5mk=" crossorigin="anonymous" />
+
 <script src='https://cloud.tinymce.com/stable/tinymce.min.js'></script>
 
 
@@ -17,12 +24,13 @@
 
 @section('content')
 
-<div class="row">
+<div class="container">
   
-  <div class="col-md-8 col-md-offset-2">
-    <h1 style="text-align: center;"> Add New Farmer</h1>
+  <header class="animated fadeInDownBig text-center text-white p-3" style="background-color:#82E0AA ;">
+    <h1 class="display-4"> Add New Farmer</h1>
+  </header>
     <hr>
-    
+    <div class="control-label col-sm-12" style="background-color: #F0F3F4" >
    {!!Form::model($stock,['route'=>['stocks.update',$stock->id],'method'=>'PUT','files'=>true])!!}
 
      {{Form::label('fname', 'First Name:')}}
@@ -47,7 +55,7 @@
 
             {{Form::select('status', ['0' => 'Available', '1' => 'Shipped','2'=>'Closed'], $stock->status)}}
 
-          <center> {{Form::submit('Submit',array('class' => 'btn btn-success btn-lg','style'=>'margin-top:20px;'))}}
+          <center> {{Form::submit('Submit',array('class' => 'btn btn-success btn-lg','style'=>'margin-top:20px; background-color:#1A5276;'))}}
 
 {!!Form::close()!!}
 
