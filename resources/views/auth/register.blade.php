@@ -45,53 +45,39 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="mobile" class="col-md-4 col-form-label text-md-right">{{ __('Mobile No') }}</label>
+                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
 
                             <div class="col-md-6">
-                                <input id="mobile" type="text" class="form-control @error('mobile') is-invalid @enderror" name="mobile" value="{{ old('mobile') }}" required autocomplete="mobile">
+                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
 
-                                @error('mobile')
+                                @error('email')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
                             </div>
                         </div>
+                <!--  checkboxes--> 
+                        <div class="form-check" style="margin-left:30%">
+                        <input class="form-check-input" type="radio" name="type" id="exampleRadios1" value="1" checked>
+                        <label class="form-check-label" for="type">
+                            Farmer
+                        </label>
+                        </div>
                         
-                        <div class="form-group row">
-                            <label for="city" class="col-md-4 col-form-label text-md-right">{{ __('City') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="city" type="text" class="form-control @error('city') is-invalid @enderror" name="city" value="{{ old('city') }}" required autocomplete="city" autofocus>
-
-                                @error('city')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
+                        <div class="form-check" style="margin-left:30%">
+                        <input class="form-check-input" type="radio" name="type" id="exampleRadios1" value="2" checked>
+                        <label class="form-check-label" for="type">
+                            Retailer
+                        </label>
                         </div>
 
-
-                  
-                  <div class="form-group row">
-                            <label for="gender" class="col-md-4 col-form-label text-md-right" >{{ __('UserType') }}</label>
-
-                            <div class="col-md-6">
-                                <select id="test">
-                                  <option value="24" selected>Farmer</option>
-                                  <option value="32">Retailer</option>
-                                  <option value="54">Employee</option>
-                               </select>
-                        
-                                @error('usertype')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                    </div>
-
+                         <div class="form-check" style="margin-left:30%">
+                        <input class="form-check-input" type="radio" name="type" id="exampleRadios1" value="3" checked>
+                        <label class="form-check-label" for="type">
+                            Employee
+                        </label>
+                        </div>
                  <!--  checkboxes--> 
                         <div class="form-group row">
                             <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
