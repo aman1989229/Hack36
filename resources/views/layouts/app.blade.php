@@ -114,6 +114,8 @@ button:hover {
                             
                                     
                                      <a class="dropdown-item" href="{{route('vegeindex')}}">Add Vegetable</a>
+
+                                      <a class="dropdown-item" href="{{route('requestorder')}}">Requested Orders</a>
                                       
                                       <a class="dropdown-item" href="{{route('employees.show',$user->id)}}">History</a>
                                     <?php 
@@ -140,7 +142,7 @@ button:hover {
                                     
                                      <a class="dropdown-item" href="{{route('placeorder')}}">Place Order</a>
                                       
-                                      <a class="dropdown-item" href="{{route('employees.show',$user->id)}}">History</a>
+                                      <a class="dropdown-item" href="{{route('orders.show',$user->id)}}"> Order History</a>
                                     <?php 
                                 }
                                 ?>

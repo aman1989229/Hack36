@@ -38,8 +38,8 @@
                <div class="card-body">
     <p class="card-text">{{$vegetable->district}}</p>
     <p class="card-text"> Rating:  {{$vegetable->name}}</p>
-     <p class="card-text">Price(per tonne):{{$vegetable->price}}</p>
-    {!! Form::open(['url'=>'orders.store','method' => 'post']) !!}
+     <p class="card-text">Price(per ton):{{$vegetable->price}}</p>
+    {!! Form::open(['route' => 'orders.store','method' => 'post']) !!}
     <!-- here form will open only but when we use model lets check edit.php inside posts
        upload a image set (files = true) -->
            {{Form::label('quantity', 'Quantity:')}}
