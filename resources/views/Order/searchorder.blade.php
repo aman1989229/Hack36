@@ -23,15 +23,16 @@
 @section('content')
 
 <div class="container">
-	
-	<header class="animated fadeInDownBig text-center text-white  p-3" style="background-color:#82E0AA ;">
-		<h1 class="display-4">Choose your Option</h1>
+  
+  <header class="animated fadeInDownBig text-center text-white  p-3" style="background-color:#82E0AA ;">
+    <h1 class="display-4">Choose your Option</h1>
   </header>
-		<hr>
+    <hr>
     <div class="row">
-    </div>
-		<div class="control-label col-sm-12" style="background-color: #F0F3F4">
-		   <div class="card" style="width: 18rem;">
+    
+    <div class="control-label col-sm-4" style="background-color: #F0F3F4">
+
+       <div class="card" style="width: 18rem;">
   <img class="card-img-top" src="{{ asset('img.jpg') }}" alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title">Search by State</h5>
@@ -46,9 +47,11 @@
           <center> {{Form::submit('Search',array('class' => 'btn btn-success btn-sm ','style'=>'margin-top:20px;background-color:#1A5276;'))}} </center>
         {!! Form::close() !!}
   </div>
+  </div>
 </div>
 
 <!-- search by state and city-->
+<div class="control-label col-sm-4" style="background-color: #F0F3F4">
      <div class="card" style="width: 18rem;">
   <img class="card-img-top" src="{{ asset('img.jpg') }}" alt="Card image cap">
   <div class="card-body">
@@ -66,7 +69,9 @@
         {!! Form::close() !!}
   </div>
 </div>
+</div>
 <!-- search by vegetable-->
+<div class="control-label col-sm-4" style="background-color: #F0F3F4">
      <div class="card" style="width: 18rem;">
   <img class="card-img-top" src="{{ asset('img.jpg') }}" alt="Card image cap">
   <div class="card-body">
@@ -84,7 +89,10 @@
         {!! Form::close() !!}
   </div>
 </div>
+</div>
+</div>
 <!-- search ended here -->
+</div>
 </div>
 @endsection
 
