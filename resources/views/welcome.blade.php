@@ -82,7 +82,7 @@
                 Welcome to <span>AgroGarden</span>, we hope you will enjoy our products and have good experience
               <span style="margin-left: 270px;"></span>
                 <a href="#" data-toggle="tooltip" data-placement="bottom" title="agrogarden@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> <span>Email: agrogarden@gmail.com</span></a>
-                <a href="#" data-toggle="tooltip" data-placement="bottom" title="+91 9898787886"><i class="fa fa-phone" aria-hidden="true"></i> <span>Call Us: +91 923 300 9000</span></a>
+                
               </div>
             </div>
           
@@ -327,20 +327,13 @@
               <h2><span>Our Produce</span> Is Mainstay For Us</h2>
               <img src="img/core-img/decor2.png" alt="">
             </div>
-            <p class="text-white mb-50 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at diam convallis ligula cursus bibendum sed at enim. Class aptent taciti sociosqu ad litora torquent conubia nostra, per inceptos
-              himenaeos.</p>
+            <p class="text-white mb-50 text-center"> We will maintain Balance and Transparency
+              throughout our business. We promise to provide basic-payment to every enrolled farmers every month. Even in scenario of failed crop, we will not leave their hand! <br>
+              And in cases of heavy crop production, we will provide them payment plus calculated incentives based on profit.</p>
           </div>
         </div>
       </div>
-      <!-- Newsletter Form -->
-      <div class="row justify-content-center">
-        <div class="col-12 col-lg-6">
-          <form action="#" method="post">
-            <input type="text" class="form-control" placeholder="Enter your email">
-            <button type="submit" class="btn famie-btn">Subscribe</button>
-          </form>
-        </div>
-      </div>
+      
     </div>
   </section>
 
@@ -408,7 +401,7 @@
           <div class="col-12 col-sm-6 col-lg-3">
             <div class="footer-widget mb-80">
               <a href="#" class="foo-logo d-block mb-30"><img src="img/core-img/logo.png" alt=""></a>
-              <p>We love to serve you good services..</p>
+              <p>We love to serve you good food..</p>
               <div class="contact-info">
                 <p><i class="fa fa-map-pin" aria-hidden="true"></i><span>CSED Department,MNNIT Allahabad</span></p>
                 <p><i class="fa fa-envelope" aria-hidden="true"></i><span>info.agrogarden@gmail.com</span></p>

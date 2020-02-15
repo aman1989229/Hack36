@@ -32,7 +32,7 @@
     </div>
 		<div class="control-label col-sm-12" style="background-color: #F0F3F4">
 		  @foreach($vegetable as $vegetable)
-      <div class="card" style="width: 18rem;">
+      <div class="grid" style="width: 18rem;">
   <img class="card-img-top" src="{{ asset('img.jpg') }}" alt="Card image cap">
         
                <div class="card-body">
