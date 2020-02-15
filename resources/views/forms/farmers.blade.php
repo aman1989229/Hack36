@@ -27,13 +27,13 @@
 <div class="container" ">
 	
 	
-   <header class="animated fadeInDownBig text-center bg-primary text-white  p-3" style="padding: 10px;">
+   <header class="animated fadeInDownBig text-center text-white  p-3" style="background-color:#82E0AA ;padding: 10px;">
 		      <h1 class="display-4"> Add New Farmer </h1>
    </header>
 		
    <hr>
     
-		<section class="animated slideInLeft bg-faded p-5 my-3" style="width: auto;height: auto;">
+		<div class="control-label col-sm-12" style="background-color: #F0F3F4">
 		{!! Form::open(['route' => 'farmers.store','data-parsley-validate'=>'','files'=>true]) !!}
     <!-- here form will open only but when we use model lets check edit.php inside posts
        upload a image set (files = true) -->
@@ -61,9 +61,9 @@
            {{Form::label('vegetable', 'Vegetable:')}}
            {{Form::text('vegetable', null,array('class'=>'form-control'))}}
           <br>
-          <center> {{Form::submit('Add Farmer',array('class' => 'btn btn-success btn-lg ','style'=>'margin-top:20px;'))}} </center>
+          <center> {{Form::submit('Add Farmer',array('class' => 'btn btn-success btn-lg ','style'=>'margin-top:20px;background-color:#1A5276;'))}} </center>
         {!! Form::close() !!}
-      </section>
+      </div>
 	
 
  </div>

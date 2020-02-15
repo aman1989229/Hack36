@@ -24,11 +24,11 @@
 
 <div class="container">
 	
-	<header class="animated fadeInDownBig text-center bg-primary text-white  p-3">
-		<h1 class="display-4"> Add New FPO</h1>
+	<header class="animated fadeInDownBig text-center text-white  p-3" style="background-color:#82E0AA ;">
+		<h1 class="display-4">Add New FPO</h1>
   </header>
 		<hr>
-		<div class="control-label col-sm-12">
+		<div class="control-label col-sm-12" style="background-color: #F0F3F4">
 		{!! Form::open(['route' => 'employees.store','data-parsley-validate'=>'','files'=>true]) !!}<!-- here form will open only but when we use model lets check edit.php inside posts
        upload a image set (files = true) -->
            {{Form::label('fname', 'First Name:')}}
@@ -53,7 +53,7 @@
            {{Form::text('pincode', null,array('class'=>'form-control'))}}
 
              <br>
-           <center>{{Form::submit('Register as FPO',array('class' => 'btn btn-success btn-lg ','style'=>'margin-top:20px;'))}}</center>
+           <center>{{Form::submit('Register as FPO',array('class' => 'btn btn-success btn-lg ','style'=>'margin-top:20px;background-color:#1A5276;'))}}</center>
         {!! Form::close() !!}
 	</div>
 
