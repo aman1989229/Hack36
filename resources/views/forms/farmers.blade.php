@@ -3,7 +3,11 @@
 @section('title','|CreatePost')
 
 @section('stylesheets')
-{!! Html::style('css/select2.min.css') !!}
+{!! Html::style('css/animate.css') !!}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+   integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css" 
+   integrity="sha256-a2tobsqlbgLsWs7ZVUGgP5IvWZsx8bTNQpzsqCSm5mk=" crossorigin="anonymous" /> 
 <script src='https://cloud.tinymce.com/stable/tinymce.min.js'></script>
 
 
@@ -12,17 +16,26 @@
      selector:'textarea'
       });
 </script>
+
+ 
 @endsection
 
 @section('content')
 
-<div class="row">
+<div class="container">
 	
-	<div class="col-md-8 col-md-offset-2">
-		<h1 style="text-align: center;"> Add New Farmer</h1>
-		<hr>
+	
+   <header class="animated fadeInDownBig text-center bg-primary text-white  p-3" style="padding: 10px;">
+		      <h1 class="display-4" > Add New Farmer </h1>
+   </header>
 		
-		{!! Form::open(['route' => 'farmers.store','data-parsley-validate'=>'','files'=>true]) !!}<!-- here form will open only but when we use model lets check edit.php inside posts
+
+    
+		<section class="animated slideInLeft bg-faded p-5 my-3" style="animation-delay: 1s;
+  animation-duration: 1s;
+  animation-iteration-count: 1;">
+		{!! Form::open(['route' => 'farmers.store','data-parsley-validate'=>'','files'=>true]) !!}
+    <!-- here form will open only but when we use model lets check edit.php inside posts
        upload a image set (files = true) -->
            {{Form::label('fname', 'First Name:')}}
            {{Form::text('fname', null,array('class'=>'form-control'))}}
@@ -47,10 +60,11 @@
 
            {{Form::label('vegetable', 'Vegetable:')}}
            {{Form::text('vegetable', null,array('class'=>'form-control'))}}
-
-           {{Form::submit('Add Farmer',array('class' => 'btn btn-success btn-lg btn-block','style'=>'margin-top:20px;'))}}
+<br>
+          <center> {{Form::submit('Add Farmer',array('class' => 'btn btn-success btn-lg ','style'=>'margin-top:20px;'))}} </center>
         {!! Form::close() !!}
-	</div>
+      </section>
+	
 
 </div>
 @endsection
