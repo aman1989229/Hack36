@@ -1,11 +1,29 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+<style type="text/css">
+    .demo1{
+        position: fixed;
+        z-index: 1;
+       display: block;
+        background-image: url('./images/img4.jpg');
+        width: 100%;
+        height: 650px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: fixed;
+        overflow: hidden;
+    }
+    #m{
+        padding-top: 100px;
+    }
+</style>
+<div class="demo1">
+<div class="container" id="m">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
+                <div class="card-header" style="background-color: lightgreen">{{ __('Login') }}</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
@@ -69,5 +87,5 @@
             </div>
         </div>
     </div>
-</div>
+</div></div>
 @endsection
