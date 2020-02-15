@@ -118,6 +118,31 @@ button:hover {
                                       <a class="dropdown-item" href="{{route('employees.show',$user->id)}}">History</a>
                                     <?php 
                                 }
+                              
+                                   
+                                   if($user->type==2) {
+                                        if($user->profile==0){
+                                        ?>
+                                 
+                                 
+                                   <a class="dropdown-item" href="{{route('retailers.index')}}">Create Profile</a>
+                                   
+                                  <?php }
+                                     else{
+                                     ?>
+                                    
+                                    <a class="dropdown-item" href="{{route('retailers.edit',$user->id)}}">Edit Profile</a>
+                                
+                                     <?php 
+                                       }
+                                     ?>
+                            
+                                    
+                                     <a class="dropdown-item" href="{{route('placeorder')}}">Place Order</a>
+                                      
+                                      <a class="dropdown-item" href="{{route('employees.show',$user->id)}}">History</a>
+                                    <?php 
+                                }
                                 ?>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();

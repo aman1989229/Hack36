@@ -41,6 +41,15 @@ Route::resource('stocks','StockController');
 //route for Empoyees
 Route::resource('employees','EmployeeController');
 
+//route for Retailers
+Route::resource('retailers','RetailerController');
+
+//route for orders
+Route::resource('orders','OrderController');
+
 //other routes
 Route::post ('addvege','OtherController@addvege')->name('addvege');
 Route::get ('vegeindex','OtherController@vegeindex')->name('vegeindex');
+Route::get ('placeorder','OtherController@placeorder')->name('placeorder');
+Route::get('searchstate',['as'=>'search.state','uses'=>'OtherController@searchstate']);
+Route::get('statequantity',['as'=>'search.state','uses'=>'OtherController@statequantity']);

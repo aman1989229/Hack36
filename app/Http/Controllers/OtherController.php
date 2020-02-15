@@ -12,6 +12,7 @@ use Auth;
 use App\Employee;
 use App\Stock;
 use App\Vegetable;
+use App\Pocgroup;
 
 class OtherController extends Controller
 {
@@ -45,5 +46,29 @@ class OtherController extends Controller
         $stock=Stock::where('id','=',$id)->first();
 
         return view('Employee.stockedit')->withStock($stock);
+    }
+
+    public function placeorder()
+    {
+        //
+
+        return view('Order.searchorder');
+    }
+
+    public function searchstate(Request $request)
+    {
+        //
+           $vegetable=Vegetable::where('state','=',$request->state)->get();
+           $pocgroups=Poc::where('state','=',$request->state)->get();
+
+        return view('Order.statelist')->withVegetable($vegetable)->withPocgroups($pocgroups);
+    }
+
+    public function statequantity(Request $request)
+    {
+        //
+           $vegetable=Vegetable::where('state','=',$request->state)->get();
+
+        return view('Order.statelist')->withVegetable($vegetable);
     }
 }
