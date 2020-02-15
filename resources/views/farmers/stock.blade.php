@@ -23,16 +23,14 @@
 @section('content')
 
 <div class="container">
-  
-      <header class="animated fadeInDownBig text-center bg-primary text-white  p-3">
+      <header class="animated fadeInDownBig text-center text-white  p-3" style="background-color:#82E0AA ;">
           <h1 class="display-4">Add New Farmer</h1>
 
-   </header>
-  
+      </header>
     <hr>
-    
-    
-    <div class="control-label col-sm-12" style=""><br>
+  </div>
+  <div class="wrapper" style="background-image: url('../images/1.jpg');height:700px;width:1100px;margin-left:80px;">
+    <div class="control-label col-sm-7" ><br>
     {!! Form::open(['route' => 'stocks.store','data-parsley-validate'=>'','files'=>true]) !!}<!-- here form will open only but when we use model lets check edit.php inside posts
        upload a image set (files = true) -->
            {{Form::label('vegetable', 'Vegetable:')}}
@@ -42,7 +40,7 @@
            {{Form::text('quantity', null,array('class'=>'form-control'))}}
 
         <br><br>
-           <center>{{Form::submit('Add My stock',array('class' => 'btn btn-success btn-lg ','style'=>'margin-top:20px; '))}}</center>
+           {{Form::submit('Add My stock',array('class' => 'btn btn-success btn-lg ','style'=>'margin-top:20px; background-color:#1A5276; '))}}
         {!! Form::close() !!}
   </div>
 </div>
