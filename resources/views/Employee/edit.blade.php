@@ -22,12 +22,11 @@
 
 @section('content')
 <div class="container">
-    
-    <header class="animated fadeInDownBig text-center bg-primary text-white  p-3">
+ <header class="animated fadeInDownBig text-center  text-white  p-3" style="background-color:#82E0AA ;">
       <h1 class="display-4">Edit Your Profile</h1>
-    </header>
+  </header>
     <hr>
- <div class="control-label col-sm-12">
+ <div class="control-label col-sm-12" style="background-color: #F0F3F4">
 	{!!Form::model($employee,['route'=>['employees.update',$employee->id],'method'=>'PUT','files'=>true])!!}
 
 		 {{Form::label('fname', 'First Name:')}}
@@ -52,16 +51,16 @@
            {{Form::text('pincode', null,array('class'=>'form-control'))}}
 
 
-          <center> {{Form::submit('Edit The FPO',array('class' => 'btn btn-success btn-lg','style'=>'margin-top:20px;'))}}
+          <center> {{Form::submit('Edit The FPO',array('class' => 'btn btn-success btn-lg','style'=>'margin-top:20px; background-color:#1A5276;'))}}
 
-{!!Form::close()!!}
+          {!!Form::close()!!}
 
-  {{Form::open(['route'=>['employees.destroy',$employee->id],'method'=>'DELETE'])}}
+          {{Form::open(['route'=>['employees.destroy',$employee->id],'method'=>'DELETE'])}}
             
- {{Form::submit('Delete FPO',['class'=>'btn btn-danger','style'=>'margin-top:20px;'])}}
-    </center>            
-        {{Form::close()}}
-</div>
+           {{Form::submit('Delete FPO',['class'=>'btn btn-danger btn-lg','style'=>'margin-top:20px; '])}}
+                
+        {{Form::close()}}</center>
+  </div>
 </div>
 @endsection
 

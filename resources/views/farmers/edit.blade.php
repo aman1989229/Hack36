@@ -26,13 +26,13 @@
 @section('content')
 <div class="container" )>
     
-      <header class="animated fadeInDownBig text-center bg-primary text-white  p-3">
+      <header class="animated fadeInDownBig text-center text-white  p-3" style="background-color:#82E0AA ;">
           <h1 class="display-4">Edit Your Profile</h1>
 
    </header>
         
         <hr>
-  <div class="control-label col-sm-12" style=""><br>
+  <div class="control-label col-sm-12" style="background-color: #F0F3F4"><br>
 	{!!Form::model($farmer,['route'=>['farmers.update',$farmer->id],'method'=>'PUT','files'=>true])!!}
 
 		 {{Form::label('fname', 'First Name:')}}
@@ -59,7 +59,7 @@
            {{Form::label('vegetable', 'Vegetable:')}}
            {{Form::text('vegetable', null,array('class'=>'form-control input-lg'))}}
            <center><br>
-           {{Form::submit('Edit Farmer',array('class' => 'btn btn-success btn-lg ','style'=>'margin-top:20px;'))}}
+           {{Form::submit('Edit Farmer',array('class' => 'btn btn-success btn-lg ','style'=>'margin-top:20px;background-color:#1A5276;'))}}
 
 {!!Form::close()!!}
 

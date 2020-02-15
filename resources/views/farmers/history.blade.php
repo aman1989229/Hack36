@@ -24,7 +24,7 @@
 
 <div class="container" >
   <div class="display-5">
-    <header class="animated fadeInDownBig text-center bg-primary text-white  p-3" style="padding: 10px;">
+    <header class="animated fadeInDownBig text-center text-white  p-3" style="background-color:#82E0AA ;padding: 10px;">
           <h1 class="display-4" > All Posts</h1>
 
    </header>
