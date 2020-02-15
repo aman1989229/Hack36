@@ -1,5 +1,5 @@
-<p align="center">
-    AGRO-GARDEN
+<p align="center" style="font-weight:bold; font-size:42px;">
+     AGRO-GARDEN
 </p>
 
 ## About our Project
@@ -16,3 +16,8 @@ Laravel is a web application framework with expressive, elegant syntax. Laravel 
 3.Other Technologies
 
 HTML, CSS, JS, JQuery, Animated CSS, Bootstrap, Particles.js
+
+
+## Team Name
+
+DEV-EEL   No.25
