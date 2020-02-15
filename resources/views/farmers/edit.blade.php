@@ -24,7 +24,7 @@
 @endsection
 
 @section('content')
-<div class="container">
+<div class="container" )>
     
       <header class="animated fadeInDownBig text-center bg-primary text-white  p-3">
           <h1 class="display-4">Edit Your Profile</h1>
