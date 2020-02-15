@@ -57,7 +57,7 @@
   <div class="card-body">
     <h5 class="card-title">Search by city</h5>
     <p class="card-text">We'll help you to search according to city.</p>
-    {!! Form::open(['route' => 'farmers.store','data-parsley-validate'=>'','files'=>true]) !!}
+    {!! Form::open(['url'=>'searchcity','method' => 'GET']) !!}
     <!-- here form will open only but when we use model lets check edit.php inside posts
        upload a image set (files = true) -->
 
@@ -77,7 +77,7 @@
   <div class="card-body">
     <h5 class="card-title">Search by Vegetable</h5>
     <p class="card-text">We'll help you to search according to vegetables.</p>
-    {!! Form::open(['route' => 'farmers.store','data-parsley-validate'=>'','files'=>true]) !!}
+    {!! Form::open(['url'=>'searchvegetable','method' => 'GET']) !!}
     <!-- here form will open only but when we use model lets check edit.php inside posts
        upload a image set (files = true) -->
 

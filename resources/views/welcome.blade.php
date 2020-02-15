@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
+      <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="d2f99348-ef00-411c-a529-75b901934f30";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 

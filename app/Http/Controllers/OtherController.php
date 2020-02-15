@@ -74,6 +74,25 @@ class OtherController extends Controller
 
         return view('Order.statelist')->withVegetable($vegetable)->withPocgroups($pocgroups);
     }
+   
+
+   public function searchcity(Request $request)
+    {
+        //
+           $vegetable=Vegetable::where('district','=',$request->city)->get();
+           $pocgroups=Poc::where('city','=',$request->city)->get();
+
+        return view('Order.citylist')->withVegetable($vegetable)->withPocgroups($pocgroups);
+    }
+
+     public function searchvegetable(Request $request)
+    {
+        //
+           $vegetable=Vegetable::where('name','=',$request->vegetable)->get();
+           $pocgroups=Poc::where('city','=',$request->city)->get();
+
+        return view('Order.citylist')->withVegetable($vegetable)->withPocgroups($pocgroups);
+    }
 
     public function statequantity(Request $request)
     {
