@@ -9,15 +9,15 @@
 
 ## About our Project
 
-TOPIC:: AGRO-GARDEN
+                TOPIC:: AGRO-GARDEN
 
 Problem Statement : Creating a supply-chain for helping the farmers and connecting them directly to te market. The basic idea is to provide them a regular pay (income) in a regular interval of time.
 
 Technology used: 
-## Laravel
+1.Laravel
 Laravel is a web application framework with expressive, elegant syntax. Laravel takes the pain out of development by easing common tasks used in many web projects.
 
-## MySQL Database
+2.MySQL Database
 
-## Other Technologies
+3.Other Technologies
 HTML, CSS, JS, JQuery, Animated CSS, Bootstrap, Particles.js
