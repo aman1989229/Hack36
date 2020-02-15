@@ -38,4 +38,12 @@ class OtherController extends Controller
          return redirect()->route('home');
         
     }
+
+    public function editstock($id)
+    {
+        //
+        $stock=Stock::where('id','=',$id)->first();
+
+        return view('Employee.stockedit')->withStock($stock);
+    }
 }

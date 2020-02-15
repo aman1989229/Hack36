@@ -48,9 +48,19 @@
                     <td>{{ $history->vegetable }}</td>
                     <td>{{ $history->quantity }}</td>
                     <td>{{ date('M j, Y',strtotime($history->created_at)) }}</td>
-                    <td>{{ $history->status }}</td>
+                     @if($history->status==0)
+                    <td>Available</td>
+                    @endif
+                    @if($history->status==1)
+                    <td>Shipped</td>
+                    @endif
+                    @if($history->status==2)
+                    <td>Closed</td>
+                    @endif
                     <td>{{ $history->price}}</td>
                     <td>{{ $history->rating }}</td>
+                    <td><a href="{{ route('stocks.edit',$history->id)
+                    }}" class="btn btn-warning btn-sm">Edit</a></td>
                    </tr>
                   @endforeach
               </tbody>

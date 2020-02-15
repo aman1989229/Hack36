@@ -102,6 +102,10 @@ class StockController extends Controller
     public function edit($id)
     {
         //
+       $stock=Stock::where('id','=',$id)->first();
+
+        return view('Employee.stockedit')->withStock($stock);
+
     }
 
     /**
@@ -114,6 +118,24 @@ class StockController extends Controller
     public function update(Request $request, $id)
     {
         //
+        
+         $stock=Stock::find($id);
+
+       $stock->fname=$request->fname;
+        $stock->lname=$request->lname;
+        $stock->address=$request->address;
+        $stock->vegetable=$request->vegetable;
+        $stock->solded=$request->solded;
+        $stock->quantity=$request->quantity;
+        $stock->status=$request->status;
+        
+
+        $stock->save();
+
+           Session::flash('success','The tag has been changed successsfully!!!');
+    return redirect()->route('home');
+
+
     }
 
     /**
