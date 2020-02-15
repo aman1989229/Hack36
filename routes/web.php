@@ -40,3 +40,7 @@ Route::resource('stocks','StockController');
 
 //route for Empoyees
 Route::resource('employees','EmployeeController');
+
+//other routes
+Route::post ('addvege','OtherController@addvege')->name('addvege');
+Route::get ('vegeindex','OtherController@vegeindex')->name('vegeindex');
