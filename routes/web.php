@@ -37,3 +37,6 @@ Route::resource('pocgroups','PocgroupController');
 
 //route for stock
 Route::resource('stocks','StockController');
+
+//route for Empoyees
+Route::resource('employees','EmployeeController');

@@ -9,6 +9,7 @@ use Session;
 use DB;
 use Auth;
 use App\Pocgroup;
+use App\Employee;
 
 class PocController extends Controller
 {
@@ -30,21 +31,24 @@ class PocController extends Controller
     public function create()
     {
        $user= Auth::user();
-       $farmer= Farmer::where('user_id','=',$user->id)->first();
-
-        $poc = new Poc;
+       $employee= Employee::where('user_id','=',$user->id)->first();
+    
+       $poc = new Poc;
         
-        $poc->city=$farmer->city;
-       
+        $poc->user_id=$user->id;
+        $poc->city=$employee->city;
+       $poc->state=$employee->state;
 
         $poc->save();
           
             
         //redirect to another base
          
-        return view('farmers.poc')->withPoc($poc);
+        return view('home');
 
     }
+     
+
 
     /**
      * Store a newly created resource in storage.

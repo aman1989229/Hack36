@@ -54,17 +54,25 @@
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
                                 
-                        
+                                 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                     <?php
                                         $user=Auth::user();?>
-                                    @if ($user->profile==0)
+                                    <?php if($user->profile==0){
+                                      if($user->type==1) {?>
                                <a class="dropdown-item" href="{{route('profile')}}">Create Profile</a>
-                                        
-                                   @else
-                                 <a class="dropdown-item" href="{{route('farmers.edit',$user->id)}}">Edit Profile</a>
-                                    
-                                     @endif
+                                  <?php } else{ ?>
+                                   <a class="dropdown-item" href="{{route('employees.index')}}">Create Profile</a>
+                                   <?php } }
+                                   else {
+                                     if($user->type==1){ ?>
+                                    <a class="dropdown-item" href="{{route('farmers.edit',$user->id)}}">Edit Profile</a>
+                                    <?php } else{ ?>
+                                    <a class="dropdown-item" href="{{route('employees.edit',$user->id)}}">Edit Profile</a>
+                                    <?php } 
+ 
+                                     }
+                                 ?>
                                     
                                      <a class="dropdown-item" href="{{route('stocks.index')}}">Stock</a>
                                       

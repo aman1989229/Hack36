@@ -9,8 +9,9 @@ use App\Poc;
 use Session;
 use DB;
 use Auth;
+use App\Employee;
 
-class FarmerController extends Controller
+class EmployeeController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -20,7 +21,7 @@ class FarmerController extends Controller
     public function index()
     {
         //
-       
+        return view('Employee.profile');
     }
 
     /**
@@ -31,7 +32,6 @@ class FarmerController extends Controller
     public function create()
     {
         //
-        return view('forms.farmers');
     }
 
     /**
@@ -40,45 +40,38 @@ class FarmerController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-
     public function store(Request $request)
-    {   
-             $id= Auth::id();
-          
-           $poc= DB::table('pocs')
-        ->select('city')
-        ->where('city','=',$request->city)
-        ->first();
-         if ($poc==NULL) {
-             return view('farmers.poc')->withPoc($poc);
-         }
+    {
+        //
+          $id= Auth::id();
 
          $user=  User::find($id);
          $user->profile=1;
          $user->save();
 
-        $farmer = new Farmer;
+        $employee = new Employee;
         
-        $farmer->user_id=$id;
-        $farmer->fname=$request->fname;
-        $farmer->lname=$request->lname;
-        $farmer->age=$request->age;
-        $farmer->address=$request->address;
-        $farmer->state=$request->state;
-        $farmer->city=$request->city;
-        $farmer->pincode=$request->pincode;
-        $farmer->vegetable=$request->vegetable;
-        $farmer->rating=0;
-        $farmer->loan=0;
+        $employee->user_id=$id;
+        $employee->fname=$request->fname;
+        $employee->lname=$request->lname;
+        $employee->age=$request->age;
+        $employee->address=$request->address;
+        $employee->state=$request->state;
+        $employee->city=$request->city;
+        $employee->pincode=$request->pincode;
+        $employee->rating=0;
+  
 
-        $farmer->save();
+        $employee->save();
           
+
             
         //redirect to another base
          
-        return redirect()->route('farmers.show',$request->city);
+        return redirect()->route('poc.create');
 
     }
+    
 
     /**
      * Display the specified resource.
@@ -86,17 +79,9 @@ class FarmerController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($city)
+    public function show($id)
     {
-        //user id
-      $user= Auth::user();
-      
-      $poc= DB::table('pocs')
-        ->select('city')
-        ->where('city','=',$city)
-        ->first();
-       
-        return view('farmers.poc')->withPoc($poc);
+        //
     }
 
     /**
@@ -108,11 +93,11 @@ class FarmerController extends Controller
     public function edit($id)
     {
         //
-        $farmer=Farmer::where('user_id','=',$id)->first();
+        $employee=Employee::where('user_id','=',$id)->first();
         
 
         //return the view and pass in the var we previously created 
-         return view('farmers.edit')->withFarmer($farmer);
+         return view('Employee.edit')->withEmployee($employee);
     }
 
     /**
@@ -125,25 +110,22 @@ class FarmerController extends Controller
     public function update(Request $request, $id)
     {
         //
-       
+        $employee=Farmer::find($id);
 
-        $farmer=Farmer::find($id);
-
-        $farmer->fname=$request->fname;
-        $farmer->lname=$request->lname;
-        $farmer->age=$request->age;
-        $farmer->address=$request->address;
-        $farmer->state=$request->state;
-        $farmer->city=$request->city;
-        $farmer->pincode=$request->pincode;
-        $farmer->vegetable=$request->vegetable;
+        $employee->fname=$request->fname;
+        $employee->lname=$request->lname;
+        $employee->age=$request->age;
+        $employee->address=$request->address;
+        $employee->state=$request->state;
+        $employee->city=$request->city;
+        $employee->pincode=$request->pincode;
+        $employee->rating=0;
         
 
-        $farmer->save();
+        $employee->save();
 
            Session::flash('success','The tag has been changed successsfully!!!');
     return redirect()->route('home');
-
     }
 
     /**
@@ -155,9 +137,9 @@ class FarmerController extends Controller
     public function destroy($id)
     {
         //
-         $farmer=Farmer::find($id);
-         $user=User::find($farmer->user_id);
-
+        $employee=Employee::find($id);
+         $user=User::find($employee->user_id);
+          
       
         $farmer->delete();
         $user->delete();
