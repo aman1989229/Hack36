@@ -16,24 +16,24 @@
      selector:'textarea'
       });
 </script>
-
+<style type="text/css">
+ 
+</style>
  
 @endsection
 
 @section('content')
 
-<div class="container">
+<div class="container" ">
 	
 	
    <header class="animated fadeInDownBig text-center bg-primary text-white  p-3" style="padding: 10px;">
-		      <h1 class="display-4" > Add New Farmer </h1>
+		      <h1 class="display-4"> Add New Farmer </h1>
    </header>
 		
-
+   <hr>
     
-		<section class="animated slideInLeft bg-faded p-5 my-3" style="animation-delay: 1s;
-  animation-duration: 1s;
-  animation-iteration-count: 1;">
+		<section class="animated slideInLeft bg-faded p-5 my-3" style="width: auto;height: auto;">
 		{!! Form::open(['route' => 'farmers.store','data-parsley-validate'=>'','files'=>true]) !!}
     <!-- here form will open only but when we use model lets check edit.php inside posts
        upload a image set (files = true) -->
@@ -60,13 +60,14 @@
 
            {{Form::label('vegetable', 'Vegetable:')}}
            {{Form::text('vegetable', null,array('class'=>'form-control'))}}
-<br>
+          <br>
           <center> {{Form::submit('Add Farmer',array('class' => 'btn btn-success btn-lg ','style'=>'margin-top:20px;'))}} </center>
         {!! Form::close() !!}
       </section>
 	
 
-</div>
+ </div>
+
 @endsection
 
 

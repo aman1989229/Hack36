@@ -3,7 +3,13 @@
 @section('title','|EditPost')
 
 @section('stylesheets')
-{!! Html::style('css/select2.min.css') !!}
+ {!! Html::style('css/animate.css') !!}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+   integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css" 
+   integrity="sha256-a2tobsqlbgLsWs7ZVUGgP5IvWZsx8bTNQpzsqCSm5mk=" crossorigin="anonymous" />
+
+
  <script src='https://cloud.tinymce.com/stable/tinymce.min.js'></script>
 
 
@@ -15,12 +21,13 @@
 @endsection
 
 @section('content')
-<div class="row">
+<div class="container">
     
-    <div class="col-md-8 col-md-offset-2">
-        <h1 style="text-align: center;"> Edit Your Profile</h1>
-        <hr>
-
+    <header class="animated fadeInDownBig text-center bg-primary text-white  p-3">
+      <h1 class="display-4">Edit Your Profile</h1>
+    </header>
+    <hr>
+ <div class="control-label col-sm-12">
 	{!!Form::model($employee,['route'=>['employees.update',$employee->id],'method'=>'PUT','files'=>true])!!}
 
 		 {{Form::label('fname', 'First Name:')}}
@@ -45,14 +52,14 @@
            {{Form::text('pincode', null,array('class'=>'form-control'))}}
 
 
-           {{Form::submit('Edit The FPO',array('class' => 'btn btn-success btn-lg btn-block','style'=>'margin-top:20px;'))}}
+          <center> {{Form::submit('Edit The FPO',array('class' => 'btn btn-success btn-lg','style'=>'margin-top:20px;'))}}
 
 {!!Form::close()!!}
 
-{{Form::open(['route'=>['employees.destroy',$employee->id],'method'=>'DELETE'])}}
+  {{Form::open(['route'=>['employees.destroy',$employee->id],'method'=>'DELETE'])}}
             
-                    {{Form::submit('Delete FPO',['class'=>'btn btn-danger btn-block','style'=>'margin-top:20px;'])}}
-                
+ {{Form::submit('Delete FPO',['class'=>'btn btn-danger','style'=>'margin-top:20px;'])}}
+    </center>            
         {{Form::close()}}
 </div>
 </div>
