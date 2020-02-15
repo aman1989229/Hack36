@@ -3,7 +3,13 @@
 @section('title','|CreatePost')
 
 @section('stylesheets')
-{!! Html::style('css/select2.min.css') !!}
+
+
+{!! Html::style('css/animate.css') !!}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+   integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css" 
+   integrity="sha256-a2tobsqlbgLsWs7ZVUGgP5IvWZsx8bTNQpzsqCSm5mk=" crossorigin="anonymous" /> 
 <script src='https://cloud.tinymce.com/stable/tinymce.min.js'></script>
 
 
@@ -16,15 +22,18 @@
 
 @section('content')
 
-<div class="row">
-  <div class="col-md-10">
-    <h1>All Posts</h1>
-  </div>
+<div class="container">
+  <div class="display-5">
+    <header class="animated fadeInDownBig text-center bg-primary text-white  p-3" style="padding: 10px;">
+          <h1 class="display-4" > All Posts</h1>
+
+   </header>
   
+  <br> <br>
   <div class="col-md-2">
-    <a href="{{ route('stocks.index') }}" class="btn btn-lg btn-block btn-primary" id="h1"> Create new Stock</a>
+    <a href="{{ route('stocks.index') }}" class="btn btn-sm  btn-primary text-primary" style="border-radius: 10px;padding:10px; background-color:white;" id="h1"> Create new Stock</a>
   </div>
-  
+  <br> <br>
   <div class="col-md-12">
     <hr>
   </div>
@@ -60,7 +69,7 @@
             </table>
             
             <!--pagination links starts here-->
-           
+      </div>     
     </div>
      </div>
 @endsection
