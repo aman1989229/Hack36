@@ -20,7 +20,7 @@
 	
 	<div class="col-md-8 col-md-offset-2">
     @if($poc==NULL){
-     <a href="{{ route('poc.create') }}" class="btn btn-success btn-lg btn-block" role="button" aria-pressed="true">Create New POC</a>
+     <h1>NO POC available at your Location!!! We'll come to you soon</h1>
      
   }@else{
        <a href="{{ route('pocgroups.create') }}" class="btn btn-success btn-lg btn-block" role="button" aria-pressed="true">Enroll me</a>
