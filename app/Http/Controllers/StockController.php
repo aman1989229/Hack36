@@ -49,9 +49,9 @@ class StockController extends Controller
         //getting vegetable price
          $vegetable=Vegetable::where(['name' => $request->vegetable, 'state' => $farmer->state])->first();
 
-     
+         $poc=Poc::where('city','=',$farmer->city)->first();
            $stock = new Stock;
-        
+       
         $stock->user_id=$id;
         $stock->fname=$farmer->fname;
         $stock->lname=$farmer->lname;
@@ -65,7 +65,7 @@ class StockController extends Controller
         $stock->solded=0;
         $stock->quantity=$request->quantity;
         $stock->remained=0;
-        $stock->poc_id=0;
+        $stock->poc_id=$poc->user_id;
         $stock->status=0;
         $stock->price=$vegetable->price*$request->quantity;
        

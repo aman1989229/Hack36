@@ -10,6 +10,8 @@ use Session;
 use DB;
 use Auth;
 use App\Employee;
+use App\Stock;
+use App\Vegetable;
 
 class EmployeeController extends Controller
 {
@@ -23,7 +25,8 @@ class EmployeeController extends Controller
         //
         return view('Employee.profile');
     }
-
+    
+     
     /**
      * Show the form for creating a new resource.
      *
@@ -82,6 +85,9 @@ class EmployeeController extends Controller
     public function show($id)
     {
         //
+         $history=Stock::where('poc_id','=',$id)->get();
+
+         return view('Employee.history')->withHistory($history);
     }
 
     /**
@@ -146,4 +152,6 @@ class EmployeeController extends Controller
 
         return redirect()->route('home');
     }
+
+      
 }

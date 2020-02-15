@@ -57,27 +57,50 @@
                                  
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                     <?php
-                                        $user=Auth::user();?>
-                                    <?php if($user->profile==0){
-                                      if($user->type==1) {?>
+                                        $user=Auth::user();
+                                   
+                                      if($user->type==1) {
+                                        if($user->profile==0){
+                                        ?>
                                <a class="dropdown-item" href="{{route('profile')}}">Create Profile</a>
-                                  <?php } else{ ?>
-                                   <a class="dropdown-item" href="{{route('employees.index')}}">Create Profile</a>
-                                   <?php } }
-                                   else {
-                                     if($user->type==1){ ?>
-                                    <a class="dropdown-item" href="{{route('farmers.edit',$user->id)}}">Edit Profile</a>
-                                    <?php } else{ ?>
-                                    <a class="dropdown-item" href="{{route('employees.edit',$user->id)}}">Edit Profile</a>
-                                    <?php } 
- 
-                                     }
-                                 ?>
-                                    
-                                     <a class="dropdown-item" href="{{route('stocks.index')}}">Stock</a>
-                                      
-                                      <a class="dropdown-item" href="{{route('stocks.show',$user->id)}}">History</a>
+                                     <?php }
+                                     else{
+                                     ?>
 
+                                    <a class="dropdown-item" href="{{route('farmers.edit',$user->id)}}">Edit Profile</a>
+                                    <?php
+                                     } 
+                                    ?>
+
+                                 <a class="dropdown-item" href="{{route('stocks.index')}}">Stock</a>
+
+                                  <a class="dropdown-item" href="{{route('stocks.show',$user->id)}}">History</a>
+                                  <?php 
+                                   }
+                                   if($user->type==3) {
+                                        if($user->profile==0){
+                                        ?>
+                                 
+                                 
+                                   <a class="dropdown-item" href="{{route('employees.index')}}">Create Profile</a>
+                                   
+                                  <?php }
+                                     else{
+                                     ?>
+                                    
+                                    <a class="dropdown-item" href="{{route('employees.edit',$user->id)}}">Edit Profile</a>
+                                
+                                     <?php 
+                                       }
+                                     ?>
+                            
+                                    
+                                     <a class="dropdown-item" href="{{route('vegeindex')}}">Add Vegetable</a>
+                                      
+                                      <a class="dropdown-item" href="{{route('employees.show',$user->id)}}">History</a>
+                                    <?php 
+                                }
+                                ?>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
