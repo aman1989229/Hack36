@@ -24,7 +24,7 @@
 <div class="container">
   
 <header class="animated fadeInDownBig text-center text-white p-3" style="background-color:#82E0AA ;">
-    <h1 class="display-4">Add New Farmer</h1>
+    <h1 class="display-4">Add Veggies</h1>
 </header>
     <hr>
     <div class="wrapper" style="background-image: url('../images/1.jpg');height:700px;width:1100px;margin-left:10px;">

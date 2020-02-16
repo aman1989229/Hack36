@@ -23,7 +23,7 @@
 
 <div class="container">
 <header class="animated fadeInDownBig text-center  text-white  p-3" style="background-color:#82E0AA ;">
-    <h1 class="display-4">All Posts</h1>  
+    <h1 class="display-4">All Orders</h1>  
 </header>
   
     <hr>

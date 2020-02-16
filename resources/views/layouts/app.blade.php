@@ -20,9 +20,11 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <style type="text/css">
         button {
-  background-color: grey;
+  background-color: white;
   border: none;
   color: white;
+  border-color: black;
+  border-style: dotted;
   padding: 10px;
   text-align: center;
   text-decoration: none;
@@ -30,8 +32,8 @@
   font-size: 16px;
   margin: 4px 2px;
 }
-.button5 {border-radius: 50%;}
-.button4 {border-radius: 50%;}
+.button5 {border-radius: 20%;}
+.button4 {border-radius: 20%;}
 button:hover {
   opacity: 0.8;
 }
@@ -41,10 +43,10 @@ button:hover {
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light shadow-sm bg-primary">
+        <nav class="navbar navbar-expand-md navbar-light shadow-sm"> 
             <div class="container" >
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                  <img src="img/core-img/logo.png" style="width:98px;height:98px;">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
