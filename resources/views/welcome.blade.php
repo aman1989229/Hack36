@@ -287,7 +287,7 @@
             </div>
             <!-- Product Description -->
             <div class="product-desc text-center pt-4">
-              <a href="#" class="product-title">kiwi</a>
+              <a href="#" class="product-title">Tomato</a>
              
             </div>
           </div>
@@ -327,18 +327,14 @@
               <h2><span>Our Produce</span> Is Mainstay For Us</h2>
               <img src="img/core-img/decor2.png" alt="">
             </div>
-            <p class="text-white mb-50 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at diam convallis ligula cursus bibendum sed at enim. Class aptent taciti sociosqu ad litora torquent conubia nostra, per inceptos
-              himenaeos.</p>
+            <p class="text-white mb-50 text-center"></p>
           </div>
         </div>
       </div>
       <!-- Newsletter Form -->
       <div class="row justify-content-center">
         <div class="col-12 col-lg-6">
-          <form action="#" method="post">
-            <input type="text" class="form-control" placeholder="Enter your email">
-            <button type="submit" class="btn famie-btn">Subscribe</button>
-          </form>
+          
         </div>
       </div>
     </div>
@@ -386,7 +382,7 @@
         <!-- Contact Maps -->
         <div class="col-lg-6">
           <div class="contact-maps mb-100">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28313.28917392649!2d-88.2740948914384!3d41.76219337461615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880efa1199df6109%3A0x8a1293b2ae8e0497!2sE+New+York+St%2C+Aurora%2C+IL%2C+USA!5e0!3m2!1sen!2sbd!4v1542893000723"
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28313.28917392649!2d-88.2740948914384!3d41.76219337461615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880efa1199df6109%3A0x8a1293b2ae8e0497!2sE+Lucknow+St%2C+Aurora%2C+IL%2C+USA!5e0!3m2!1sen!2sbd!4v1542893000723"
               allowfullscreen></iframe>
           </div>
         </div>
